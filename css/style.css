@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 30px;
+    background: linear-gradient(90deg, #07aeea 0.000%, #2bf598 100.000%);
+}
+
+
+#listaPersonajes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  padding: 10px;
+  font-family: 'Nunito',sans-serif;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  background-color: #ffeffe; 
+  border: 3px solid #f7f8f8;   
+  border-radius: 9px;         
+ 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px); 
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}
+
+
+.card > img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 20px;
+  flex-shrink: 0;    
+}
+
+
+.card > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card > div h3 {
+  margin: 0 0 6px 0;
+  font-size: 1.2rem;
+  color: #1565c0;
+}
+
+
+.card , div p {
+  margin: 2px 0;
+  font-size: 0.85rem;
+  color: #000000;
+  line-height: 1.4;
+  font-weight: 700;
+}
